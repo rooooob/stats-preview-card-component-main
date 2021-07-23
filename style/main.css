@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --card_background: hsl(244, 38%, 16%);
+    --accent:  hsl(277, 64%, 61%);
+    --main_heading:  hsl(0, 0%, 100%);
+    --main_paragraph: hsla(0, 0%, 100%, 0.75);
+    --stat_headings: hsla(0, 0%, 100%, 0.6);
+    --heading_font: 'Inter', sans-serif;
+    --paragraph_font: 'Lexend Deca', sans-serif;
+}
+
+body {
+    background-color: hsl(233, 47%, 7%);
+}
+
+.container {
+    background-color: var(--card_background);
+    display: flex;
+    width: 80%;
+    height: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-direction: row;
+    border-radius: 10px;
+}
+
+.description {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header, .stats_d {
+    color: var(--main_heading);
+    justify-content: center;
+}
+
+.header {
+    font-weight: 700;
+    margin-left: 7%;
+    margin-bottom: 1.6rem;
+}
+
+.text {
+    color: var(--main_paragraph);
+    font-size: 15px;
+    margin-left: 7%;
+    margin-right: 2%;
+    margin-bottom: 4rem;
+}
+
+.text, stats_heading {
+    font-family: var(--paragraph_font);
+}
+
+.stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.stats_heading {
+    color: var(--main_heading);
+    margin-bottom: .7rem;
+}
+
+.stats_d {
+    color: var(--main_paragraph);
+    font-size: .8rem;
+}
+
+.image {
+    flex-basis: 50%;
+    background-image: linear-gradient(180deg, rgba(170, 92, 219, .5) 0%, rgba(170, 92, 219, .4) 100%),
+        url("../images/image-header-desktop.jpg");
+    background-size: cover;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+.accent {
+    color: var(--accent);
+}
+@media (max-width: 640px) {
+    .container {
+        flex-direction: column-reverse;
+        height: 90%;
+        transform: translate(-50%, -50%);
+    }
+
+    .image {
+        background-image: linear-gradient(180deg, rgba(170, 92, 219, .5) 0%, rgba(170, 92, 219, .4) 100%),
+        url("../images/image-header-mobile.jpg");
+        flex-basis: 30%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 0;
+        
+    }
+
+    .description {
+        flex-basis: 70%;
+        text-align: center;
+    }
+    
+    .header {
+        margin: 2rem auto;
+    }
+    .text {
+        margin-bottom: .5rem;
+    }
+
+    .stats {
+        flex-direction: column;
+    }
+
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+    color: var(--main_paragraph);
+    font-family: var(--paragraph_font);
+    position: absolute;
+    bottom: 0;
+    right: 2%;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+ }
