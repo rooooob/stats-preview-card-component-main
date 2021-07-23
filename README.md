@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/rooooob/stats-preview-card-component-main]
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: https://github.com/rooooob/stats-preview-card-component-main
+- Live Site URL: [gihubpage](https://rooooob.github.io/stats-preview-card-component-main/)
 
 ## My process
 
@@ -69,7 +69,7 @@ learn React
 
 ## Author
 
-- Website - [Rob](https://www.your-site.com)
+- Website - [Rob](https://github.com/rooooob)
 - Frontend Mentor - [Rob](https://www.frontendmentor.io/profile/rooooob)
 - Twitter - [@yourusername](https://www.twitter.com/yourusername)
 
